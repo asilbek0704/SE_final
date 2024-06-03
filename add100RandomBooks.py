@@ -4,7 +4,6 @@ import requests
 import json
 from faker import Faker
 
-
 APIHOST = "http://library.demo.local"
 LOGIN = "cisco"
 PASSWORD = "Cisco123!"
@@ -39,7 +38,7 @@ apiKey = getAuthToken()
 
 # Using the faker module, generate random "fake" books
 fake = Faker()
-for i in range(106, 206):
+for i in range(206, 231):
     fakeTitle = fake.catch_phrase()
     fakeAuthor = fake.name()
     fakeISBN = fake.isbn13()
